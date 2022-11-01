@@ -1,0 +1,159 @@
+:root {
+    /* Color variables */
+    --background-color : #f8f8f8;
+    --nav-text : #707070;
+
+    --subtitle : #1792d2;
+    --title : #143774;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+
+
+header {
+    text-align: center;
+    padding: 2em 0;
+    font-family: 'ubuntu', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header h1 {
+    font-family: 'Lora', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--title);
+}
+
+header p {
+    margin-top: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--subtitle);
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    text-decoration: none;
+    padding: .25em 0;
+    color: var(--nav-text);
+    font-weight: 700;
+}
+
+nav a:hover,
+    a:focus {
+    color: #1792d2;
+}
+
+.current-page:hover {
+    color: var(--nav-text);
+}
+
+.current-page {
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+/* ================
+    width > 960px
+ */
+
+@media (min-width: 959px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 960;
+        width: 90%;
+    }
+
+    nav ul {
+        margin: 1em 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* ================
+    width < 960px
+ */
+
+@media (max-width: 960px) {
+
+    .container {
+        margin: 0 auto;
+        max-width: 960;
+        width: 90%;
+    }
+
+    nav ul {
+        margin: 1em 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 3em 0;
+        color: var(--nav-text);
+        font-weight: 700;
+    }
+}
+
+ /* ================
+    width > 640px
+ */
+
+@media (max-width: 640px) and (orientation: portrait){
+
+    header p {
+        font-size: 1rem;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 960;
+        width: 90%;
+    }
+
+    nav ul {
+        margin: 1em 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 1em;
+        padding: 1em 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: .25em 0;
+        color: var(--nav-text);
+        font-weight: 700;
+    }
+
+    .current-page {
+        padding-bottom: 2px;
+        border-bottom: 2px solid black;
+    }
+}
