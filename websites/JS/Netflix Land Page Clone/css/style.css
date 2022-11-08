@@ -85,13 +85,13 @@ hr {
       BUTTONS
 *************** */
 
-.header-btn {
+.header-button {
     opacity: .9;
     padding: 1em;
     background-color: var(--btn-color);
 }
 
-.header-btn:hover {
+.header-button:hover {
     opacity: 1;
     cursor: pointer;
 }
