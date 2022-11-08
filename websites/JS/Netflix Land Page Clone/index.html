@@ -21,7 +21,7 @@
         <img src="images/background.jpg" alt="" class="header-background">
         <div class="header-header">
             <img src="images/logo.svg" alt="" class="header-logo">
-            <div class="header-language-selector">PT</div>
+            <div class="header-language-selector language-selector">PT</div>
             <button class="header-button">Entrar</button>
         </div>
         <div class="header-cta">
@@ -29,7 +29,7 @@
             <h2 class="header-cta-subtitle">Assista onde quiser. Cancele quando quiser.</h2>
             <p class="header-cta-call">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
             <form action="">
-                <input type="text" value="Email">
+                <input id="header-cta-input" type="text" value="Email" class="header-cta-input cta-input">
                 <input type="button" value="Teste" class="header-cta-btn" id="header-form-btn">
             </form>
         </div>
@@ -38,33 +38,127 @@
     <main class="container-main">
         <article class="main-article-container">
             <div class="article-container-div">
-                <h1 class="article-container-title"></h1>
-                <h2 class="article-container-subtitle"></h2>
+                <h1 class="article-container-title">Aproveite na TV.</h1>
+                <h2 class="article-container-subtitle">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</h2>
             </div>
-            .article-container-media>img.article.
-        </article>
-        <article class="main-article-container">
-            <div class="article-container-div">
-                <h1 class="article-container-title"></h1>
-                <h2 class="article-container-subtitle"></h2>
+            <div class="article-container-media">
+                <img src="" alt="" class="article-media-img">
+                <img src="" alt="" class="article-media-animated">
             </div>
         </article>
         <article class="main-article-container">
             <div class="article-container-div">
-                <h1 class="article-container-title"></h1>
-                <h2 class="article-container-subtitle"></h2>
+                <h1 class="article-container-title">Assista quando quiser.</h1>
+                <h2 class="article-container-subtitle">Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
+            </div>
+            <div class="article-container-media">
+                <img src="" alt="" class="article-media-img">
+                <img src="" alt="" class="article-media-animated">
             </div>
         </article>
         <article class="main-article-container">
             <div class="article-container-div">
-                <h1 class="article-container-title"></h1>
-                <h2 class="article-container-subtitle"></h2>
+                <h1 class="article-container-title">Crie perfis para crianças.</h1>
+                <h2 class="article-container-subtitle">Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</h2>
+            </div>
+            <div class="article-container-media">
+                <img src="" alt="" class="article-media-img">
+                <img src="" alt="" class="article-media-animated">
             </div>
         </article>
+        <article class="main-article-container">
+            <div class="article-container-div">
+                <h1 class="article-container-title">Baixe séries para assistir offline.</h1>
+                <h2 class="article-container-subtitle">Disponível em todos os planos, exceto no Básico com anúncios.</h2>
+            </div>
+            <div class="article-container-media">
+                <img src="" alt="" class="article-media-img">
+                <img src="" alt="" class="article-media-animated">
+            </div>
+        </article>
+
+        <section class="faq-container" aria-label="Frequent Asked Questions">
+            <h1 class="faq-container-title">Perguntas frequentes</h1>
+            <div class="faq-body-container">
+                <div class="faq-question-container">
+                    <div class="faq-question-header" id="faq-question-header">
+                        <h1 class="faq-question-title" id="faq-question-title">O que é a Netflix?</h1>
+                        <button class="faq-question-switch" id="faq-question-switch">+</button>
+                    </div>
+                </div>
+                <div class="faq-question-container">
+                    <div class="faq-question-header" id="faq-question-header">
+                        <h1 class="faq-question-title" id="faq-question-title">Quanto custa a Netflix?</h1>
+                        <button class="faq-question-switch" id="faq-question-switch">+</button>
+                    </div>
+                </div>
+                <div class="faq-question-container">
+                    <div class="faq-question-header" id="faq-question-header">
+                        <h1 class="faq-question-title" id="faq-question-title">O que muda no plano Básico com anúncios?</h1>
+                        <button class="faq-question-switch" id="faq-question-switch">+</button>
+                    </div>
+                </div>
+                <div class="faq-question-container">
+                    <div class="faq-question-header" id="faq-question-header">
+                        <h1 class="faq-question-title" id="faq-question-title">Onde posso assistir?</h1>
+                        <button class="faq-question-switch" id="faq-question-switch">+</button>
+                    </div>
+                </div>
+                <div class="faq-question-container">
+                    <div class="faq-question-header" id="faq-question-header">
+                        <h1 class="faq-question-title" id="faq-question-title">Como faço para cancelar?</h1>
+                        <button class="faq-question-switch" id="faq-question-switch">+</button>
+                    </div>
+                </div>
+                <div class="faq-question-container">
+                    <div class="faq-question-header" id="faq-question-header">
+                        <h1 class="faq-question-title" id="faq-question-title">O que eu posso assistir na Netflix?</h1>
+                        <button class="faq-question-switch" id="faq-question-switch">+</button>
+                    </div>
+                </div>
+                <div class="faq-question-container">
+                    <div class="faq-question-header" id="faq-question-header">
+                        <h1 class="faq-question-title" id="faq-question-title">A Netflix é adequada para crianças?</h1>
+                        <button class="faq-question-switch" id="faq-question-switch"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-cta">
+            <div class="footer-cta-container">
+                <h2 class="footer-cta-call">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h2>
+                <form action="" id="footer-cta-mailform" class="footer-cta-mailform">
+                    <input value="Email" type="text" name="email" id="footer-cta-input" class="footer-cta-input cta-input">
+                    <button type="submit" id="footer-cta-button" class="footer-cta-button">Vamos lá</button>
+                </form>
+            </div>
+        </section>
     </main>
-
-
-    <hr>
-    <h1 class="faq-question-title">Abc</h1>
+    <footer class="footer">
+        <div class="footer-container">
+            <h1 class="footer-tittle">Dúvidas? Ligue <a href="tel:0800 591 8942" class="footer-cta-phone">0800 591 8942</a></h1>
+            <div class="footer-links-container">
+                <a href="" class="footer-link">Perguntas frequentes</a>
+                <a href="" class="footer-link">Central de Ajuda</a>
+                <a href="" class="footer-link">Conta</a>
+                <a href="" class="footer-link">Media Center</a>
+                <a href="" class="footer-link">Relações com investidores</a>
+                <a href="" class="footer-link">Carreiras</a>
+                <a href="" class="footer-link">Resgatar cartão pré-pago</a>
+                <a href="" class="footer-link">Comprar cartão pré-pago</a>
+                <a href="" class="footer-link">Formas de assistir</a>
+                <a href="" class="footer-link">Termos de Uso</a>
+                <a href="" class="footer-link">Privacidade</a>
+                <a href="" class="footer-link">Preferências de cookies</a>
+                <a href="" class="footer-link">Informações corporativas</a>
+                <a href="" class="footer-link">Entre em contato</a>
+                <a href="" class="footer-link">Teste de velocidade</a>
+                <a href="" class="footer-link">Avisos legais</a>
+                <a href="" class="footer-link">Só na Netflix</a>
+            </div>
+            <div class="footer-language-selector">PT</div>
+            <p class="footer-container-copyrights">Netflix Brasil</p>
+        </div>
+    </footer>
 </body>
 </html>
