@@ -63,10 +63,29 @@ hr {
     margin: 0px;
 }
 
-.header-container-background {
+.header-background-container {
     width: 100%;
+    height: 90%;
+    position: absolute;
+}
+
+.header-background {
+    width: 100%;
+    position: absolute;
+    height: inherit;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -2;
+}
+
+.header-background-shadowfx {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    opacity: .9;
+    box-shadow: inset 100px 100px 100px 10px black, inset -100px -100px 100px 0.1px black;
+    z-index: -1;
+    
 }
 
 .article-img-holder {
@@ -85,18 +104,22 @@ hr {
       BUTTONS
 *************** */
 
-.header-button {
+.button {
+    color: white;
+    font-weight: bold;
     opacity: .9;
     padding: 1em;
     background-color: var(--btn-color);
+    border: none;
+    border-radius: 2px;
 }
 
-.header-button:hover {
+.button:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-.faq-btn {
+.faq-question-container {
     display: block;
     background-color: var(--faq-btn-background);
     padding: 1em;
@@ -113,6 +136,19 @@ hr {
 *************** */
 
 .header-container {
+}
+
+.header-header {
+    max-width: 90%;
+    display: flex;
+    align-content: space-between;
+}
+
+.header-cta-container {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
 }
 
 
