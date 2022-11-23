@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://kit.fontawesome.com/b31c979fd0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
@@ -35,10 +34,14 @@
                 <h1 class="header-cta-title">Filmes, séries e muito mais. Sem limites.</h1>
                 <h2 class="header-cta-subtitle">Assista onde quiser. Cancele quando quiser.</h2>
                 <p class="header-cta-call">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-                <form action="" class="header-cta-form">
-                    <input id="header-cta-input" type="text" class="header-cta-input input">
-                    <input type="button" value="Vamos lá" class="header-cta-btn btn-large button" id="header-form-btn">
-                </form>
+                <div class="header-form-container">
+                    <form action="" class="header-cta-form">
+                        <input id="Email header-cta-input-email" type="email" name = "email" value="" class="header-cta-input input" placeholder="Email">
+                    </form>
+                    <button type="button" value="" type="submit" class="header-cta-btn btn-large button">
+                        <span>Vamos lá</span> <span><i class="fas fa-chevron-right btn-icon"></i></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
