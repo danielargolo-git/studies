@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b31c979fd0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,33 +17,37 @@
 
 
     <title>Netflix Brasil - assistir a séries online, assistir a filmes online </title>
-</head>
+</head> 
 <body>
     <header class="header">
         <div class="header-container">
             <div class="header-promoad-container">
-                <p class="btn-rounded">novo!</p>
+                <div class="teste">
+                <p class="btn-rounded ">novo!</p>
                 <p class="header-promoad-text">Planos a partir de <span>R$18,90.</span></p>
                 <a href="#" class="header-promoad-cta">Saiba mais </a>
+                </div>
             </div>
             <div class="header-nav">
                 <img src="images/logo.svg" alt="" class="header-logo">
                 <div class="header-userinterface">
-                    <div class="header-language-selector language-selector">PT</div>
+                    <div class="header-language-selector language-selector"><span><i class="fa-light fa-globe"></i></span> PT <span><i class="fa-sharp fa-solid fa-caret-down"></i></span></div>
                 <button class="header-button button">Entrar</button>
                 </div>
             </div>
             <div class="header-cta-container">
                 <h1 class="header-cta-title">Filmes, séries e muito mais. Sem limites.</h1>
                 <h2 class="header-cta-subtitle">Assista onde quiser. Cancele quando quiser.</h2>
-                <p class="header-cta-call">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
                 <div class="header-form-container">
-                    <form action="" class="header-cta-form">
-                        <input id="Email header-cta-input-email" type="email" name = "email" value="" class="header-cta-input input" placeholder="Email">
-                    </form>
-                    <button type="button" value="" type="submit" class="header-cta-btn btn-large button">
-                        <span>Vamos lá</span> <span><i class="fas fa-chevron-right btn-icon"></i></span>
-                    </button>
+                    <h3 class="header-cta-call">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+                    <div class="form">
+                        <form action="" class="header-cta-form">
+                            <input id="Email header-cta-input-email" type="email" name = "email" value="" class="header-cta-input input" placeholder="Email">
+                        </form>
+                        <button type="button" value="" type="submit" class="header-cta-btn btn-large button">
+                            <span>Vamos lá</span> <span><i class="fas fa-chevron-right btn-icon"></i></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
