@@ -26,174 +26,121 @@
 }
 
 body {
-    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: black;
+    color: #999;
 }
 
+ul {
+    list-style: none;
+}
 
-/* ***************
-       TEXT 
-*************** */
-
-h1, h2, h3, p, .language-selector {
-    font-family: 'DM sans',Helvetica,Arial,sans-serif;
-    color: #fff;
-    letter-spacing: 0;
+h1, h2, h3, h4 {
+    color: white;
 }
 
 h1 {
-    font-size: var(--h1-size);
     font-weight: var(--h1-wgt);
+    font-size: var(--h1-size);
+    line-height: 1.1;
 }
 
-h2 {
-    font-size: var(--h2-size);
-    font-weight: var(--h2-wgt); 
-}
-
-hr {
-    border: 4px solid var(--hr-color);
-}
-
-.language-selector {
+a {
     color: white;
-    font-weight: bold;
+    text-decoration: none;
 }
 
-/* ***************
-      IMAGES
-*************** */
-
-.header-background {
-    width: 100%;
-    height: inherit;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: inherit;
-    z-index: -2;
+p {
+    margin: 0.5rem 0;
 }
 
-.header-background-shadowfx {
+img {
     width: 100%;
-    height: inherit;
-    opacity: .88;
+}
+
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url(/images/background.jpg) no-repeat center center/cover;
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+}
+
+.showcase-top-logo {
+    width: 170px;
     position: absolute;
-    left: 0;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%); 
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
     right: 0;
-    top: 0;
-    bottom: 0;
-    box-shadow: inset 100px 100px 100px 10px black, inset -100px -100px 100px 0.1px black;    
-    z-index: -1;
+    transform: translate(-50%, -50%);
 }
 
-.article-img-holder {
-    width: 100%;
-    margin: 0px auto;
+.showcase-top-language {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
+}
+
+
+.showcase-content {
     position: relative;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
 }
 
-.aritcle-img-media-holder {
-    width: 100%;
-    position: relative;
-    z-index: -1;
-}
 
-/* ***************
-      BUTTONS
-*************** */
 
-.button {
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: var(--btn-color);
     color: white;
-    font-weight: bold;
-    opacity: .9;
-    padding: 1em;
-    background-color: var(--btn-color);
+    padding: .4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
     border: none;
+    cursor: pointer;
+    margin-right: .5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0, 0.45);
     border-radius: 2px;
 }
 
-.button:hover {
-    opacity: 1;
-    cursor: pointer;
+.btn:hover {
+    opacity: .9;
 }
 
-.faq-question-container {
-    display: block;
-    background-color: var(--faq-btn-background);
-    padding: 1em;
-    width: 10em;
-    height: 0em;
+.btn-rounded {
+    border-radius: 5px;
 }
 
-/* ***************
-        DIV 
-*************** */
-
-.container {
-    display: flex;
-    flex-direction: column;
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
 }
 
-.header-container {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.btn-large {
+    font-size: 1rem;
+    padding: .8rem 1.3rem;
+    text-transform: uppercase;
 }
-
-
-/* TOP */
-
-.header-body {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.header-nav {
-    width:  90%;
-    height: 2.8em;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    z-index: 1;
-}
-
-
-.header-user {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Header Body */
-
-
-.header-language-selector {
-    margin-right: 1em;
-}
-
-.header-cta-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 1;
-}
-
-
-
-
-
-
-/*     Width >= 960 PX    */
-
-/*     Width < 959 PX    */
-
-/*     Width < 959 PX & PORTRAIT     */
-
-/*     Width =< 600 PX    */
-
-/*     Width =< 600 PX & PORTRAIT    */

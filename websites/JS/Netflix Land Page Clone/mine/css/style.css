@@ -1,0 +1,257 @@
+:root {
+    font-size: 16px;
+
+    --h1-size: 3.125rem;
+    --h2-size: 1.625rem;
+
+    --h1-wgt: 600;
+    --h2-wgt: 500;
+
+    --btn-color: #f40612;
+
+    --faq-color: #999;
+    --faq-btn-background: #303030;
+
+    --hr-color: #444;
+
+    --detail: #0071eb;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #000;
+}
+
+
+/* ***************
+       FONT 
+*************** */
+
+h1, h2, h3, p, a, .language-selector {
+    font-family: 'DM sans',Helvetica,Arial,sans-serif;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-weight: var(--h1-wgt);
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: var(--h2-wgt); 
+}
+
+hr {
+    border: 4px solid var(--hr-color);
+}
+
+.language-selector {
+    color: white;
+    font-weight: bold;
+}
+
+a, ul, li, ol {
+    text-decoration: none;
+}
+
+form, input, button {
+    margin: 0;
+    padding: 0;
+}
+/* ***************
+      IMAGES
+*************** */
+
+.header-container {
+    background: url(/images/background.jpg) no-repeat, center, center/cover;
+}
+
+.article-img-holder {
+    width: 100%;
+    margin: 0px auto;
+    position: absolute;
+}
+
+.aritcle-img-media-holder {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.header-logo {
+    width: 8.375rem;
+}
+/* ***************
+      BUTTONS
+*************** */
+
+.button {
+    color: white;
+    /* font-weight: bold; */
+    text-align: center;
+    opacity: .9;
+    padding: .6em 1em;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 3px;
+}
+
+.button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn-large {
+    font-size: 1.625rem;
+}
+
+.faq-question-container {
+    display: block;
+    background-color: var(--faq-btn-background);
+    padding: 1em;
+    width: 10em;
+    height: 0em;
+}
+
+.btn-rounded {
+    background-color: var(--btn-color);
+    border-radius: .9em;
+    font-weight: 900;
+    color: white;
+    padding: .2em 1em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.input {
+    width: 500px;
+    height: 60px;
+    font-size: 1.625rem;
+}
+/* ***************
+        DIV 
+*************** */
+.header {
+    position: relative;
+}
+
+.header-container {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0, .5);
+    box-shadow: inset 0px 170px 100px -100px red, inset 0px -100px 100px 0.1px black;
+}
+
+/* Top */
+
+.header-promoad-container {
+    position: relative;
+    padding: 1.2em 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.header-promoad-text {
+    color: black;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.header-promoad-container span {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.header-promoad-cta {
+    margin-left: 10px;
+    font-weight: 900;
+    color: var(--detail);
+    font-size: 16px;
+}
+
+.header-nav {
+    width:  90%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2.3em;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.header-userinterface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-language-selector {
+    margin-right: 1em;
+}
+
+/* Header Body */
+
+.header-cta-container {
+    position: relative;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 950px;
+    z-index: 2;
+}
+
+.header-cta-call {
+    margin-top: 1.5em;
+    font-size: 1.2rem;
+}
+
+.header-cta-form {
+    margin-top: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+/*     Width >= 960 PX    */
+
+/*     Width < 959 PX    */
+
+/*     Width < 959 PX & PORTRAIT     */
+
+/*     Width =< 600 PX    */
+
+/*     Width =< 600 PX & PORTRAIT    */
