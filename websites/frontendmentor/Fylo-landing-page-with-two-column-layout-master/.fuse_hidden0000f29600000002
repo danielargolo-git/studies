@@ -1,0 +1,15 @@
+Header
+    Nav com logo + 3 links
+    HeroSection em grid
+        Chamada
+            H1 - titulo
+            H2 - descrição
+            input email + botão
+        Ilustração
+    Body mostrando avaliação do cliente
+        Texto
+            H1 - titulo
+            h2 - corpo do texto
+            CTA - link verde com icone no final
+            Imagem de avaliação
+        

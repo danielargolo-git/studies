@@ -1,0 +1,23 @@
+Header
+    Nav com logo + 3 links
+    HeroSection em grid
+        Chamada
+            H1 - titulo
+            H2 - descrição
+            input email + botão
+        Ilustração
+Main mostrando avaliação do cliente
+    Texto
+        H1 - titulo
+        h2 - corpo do texto
+        CTA - link verde com icone no final
+        Imagem de avaliação
+    Ilustração
+    CTA
+        H1 - titulo
+        H2 - chamada
+        Mesmo input email do header
+Footer
+    Grid de 2 linhas e 4 colunas
+        Logo sozinho na primeira linha
+        Informações de contato  displayflex com links da empresa    redes sociais

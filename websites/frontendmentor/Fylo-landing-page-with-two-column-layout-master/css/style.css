@@ -1,0 +1,56 @@
+:root {
+    /* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* ## Colors */
+
+/* ### Primary */
+
+--Very-Dark-Blue: hsl(243, 87%, 12%);
+--Desaturated-Blue: hsl(238, 22%, 44%);
+
+/* ### Accent */
+
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+
+/* ### Neutral */
+
+--Light-Grayish-Blue: hsl(240, 75%, 98%)
+--Light-Gray: hsl(0, 0%, 75%);
+
+/* ## Typography */
+
+/* ### Headings, Call-to-actions, Header Navigation */
+
+--headerfont [Raleway](https://fonts.google.com/specimen/Raleway);
+--h1wgt: 700;
+--h2wgt: 400;
+
+/* ### Body */
+
+--bodyfont: [Open Sans](https://fonts.google.com/specimen/Open+Sans);
+
+}
+
+
+*,
+*::before,
+*::after{
+    block-size: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a, ul, ol, li {
+    text-decoration: none;
+}
+
+body {
+
+}
