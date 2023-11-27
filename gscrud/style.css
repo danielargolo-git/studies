@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-size: 12;
+}
+
+
+
+.header-nav {
+    background-color: black;
+    padding: 15px 0;
+}
+
+
+/* .header-nav ol :hover {
+    opacity: 0.8;    
+    color: white;
+} */
+
+
+ul {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+}
+
+.nav-item {
+    background-color: rgb(75, 75, 75);
+    color: black;
+    margin: 0.5em;
+    padding: 1em;
+    width: 100px;
+    border-radius: 3px;
+    transition: width 700ms;
+}
+
+
+ul :hover {
+    box-shadow: inset 2px 0px 15px white;
+    cursor: pointer;
+    transition-timing-function: ease-out;
+    background: rgb(187, 187, 187);
+    color: black;
+    width: 200px;
+}
+
+/* 
+** Efeito 1 - Mudança básica de cor
+ul :hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-timing-function: ease-in-out; 
+} */
