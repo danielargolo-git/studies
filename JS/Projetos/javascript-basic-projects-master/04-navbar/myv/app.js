@@ -10,3 +10,17 @@
 //Os componentes do nav precisam estar dentro do mesmo nav
 
 
+//Adicionar condição de moouseover e scroll
+
+//Elementos
+
+const navbutton = document.querySelector(".nav-toggle");
+const links = document.querySelector(".links");
+
+
+//Function
+
+navbutton.addEventListener("click", function(){
+    this.classList.toggle("close");
+    links.classList.toggle("overlay");
+});

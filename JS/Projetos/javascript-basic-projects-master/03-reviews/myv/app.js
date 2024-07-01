@@ -36,9 +36,13 @@ const reviews = [
 ];
 
 //Perfil
-const author = document.getElementById("#author");
-const job = document.getElementById("#job");
-const info = document.getElementById("#info");
+//author = name
+//job = job
+//info = text
+const author = document.getElementById("author");
+const job = document.getElementById("job");
+const info = document.getElementById("info");
+const pic = document.getElementById("person-img");
 
 //Botões
 const next = document.querySelector(".next-btn");
@@ -46,14 +50,60 @@ const prev = document.querySelector(".prev-btn");
 
 
 //Chamado
-let index = 1;
+let index = 0;
+let indexlength = reviews.length -1;
 
 window.addEventListener("load", function(){
-  const item = reviews[index];
-  author.textContent = item.name;
+  changevalue();
 })
 
+//Variavel que diga qual é a última posição
+//Fazer com que o valor máximo do next seja a variavel acima
+//Quando chegar no valor máximo, se torna 0
+
+next.addEventListener("click", function(){
+  increase();
+})
+
+  
+//Fazer com que o valor máximo do back seja 0
+//Quando chegar em 0, se torne o maior index do array
+prev.addEventListener("click", function(){
+  decrease();
+})
+
+
+function increase () {
+  if (index < indexlength) {
+    index++;
+    console.log("Avançou");
+    changevalue();
+  }else{
+    index = 0;
+    console.log("Voltou");
+    changevalue();
+  }
+}
+
+function decrease () {
+  if (index == 0) {
+    index = indexlength;
+    console.log("Último");
+    changevalue();
+  }else if (index > 0, index <= indexlength){
+    index--;
+    console.log("Diminuiu 1");
+    changevalue();
+  }
+}
+
 function changevalue () {
-
-
+  const item = reviews[index];
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+  pic.src = item.img;
+  console.log(index);
+  console.log(indexlength);
+/*   console.log(item); */
 }

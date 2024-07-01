@@ -1,0 +1,78 @@
+:root {
+
+/*
+  Mobile: 375px
+  Desktop: 1440px */
+
+
+/* ## Colors   */
+/*             */
+/* ### Primary */
+
+--Blue: hsl(246, 80%, 60%);
+--Light-red: hsl(15, 100%, 70%) /*(work)*/;
+--Soft-blue: hsl(195, 74%, 62%) /*(play)*/;
+--Light-red: hsl(348, 100%, 68%) /*(study)*/;
+--Lime-green: hsl(145, 58%, 55%) /*(exercise)*/;
+--Violet: hsl(264, 64%, 52%) /*(social)*/;
+--Soft-orange: hsl(43, 84%, 65%) /*(self care)*/;
+
+/* ### Neutral */
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    list-style-type: none;
+}
+
+/* ### Font */
+body {
+    font-size: 18px;
+}
+
+.rubik300 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+}
+
+.rubik400 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+.rubik500 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+.bg-profile{
+    background-color: var(--Desaturated-blue);
+}
+
+.bg-card{
+    background-color: var(--Dark-blue);
+}
+
+.ptfrul {
+    font-size: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    text-align: left;
+    background-color: none;
+    background: none;
+    color: white;
+}

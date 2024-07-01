@@ -1,0 +1,114 @@
+// A dashboard that shows the time spent organized accordangly with the data from server(json)
+
+// A big panel with smaller panels inside of it
+// Each small panel has:
+    Head image
+    Title
+    3dot button for extra options
+    Big text with ammount of time spent
+    Small text with time from previous entry
+// The left most panel has a small profile of the user followed by the 3 time divisions (daily, weekly, monthly)
+
+// I'll use functions to call and create the data from the json to simulate a way of personalizing the time tracks of the user
+
+2h57min
+
+//code - js
+
+// json
+const bd = JSON.parse(data.json);
+
+// Profile
+const userName = document.get.elementbyid("userName");
+const userPic = document.get.elementbyid("userPic");
+
+const dailyBtn = document.get.elementbyid("dailyBtn");
+const weeklyBtn = document.get.elementbyid("weeklyBtn");
+const monthlyBtn = document.get.elementbyid("monthlyBtn");
+
+// Time cards
+const cardTitle = document.get.elementbyid("cardTitle");
+const cardTimeCount = document.get.elementbyid("cardTimeCount");
+const cardPic = document.get.elementbyid("cardPic");
+const cardPreviousTimeCount = document.get.elementbyid("cardPreviousTimeCount");
+const cardPreviousPeriod = document.get.elementbyid("cardPreviousPeriod)
+
+// #Getting info
+var timeOpt;
+
+//daily
+dailyBtn.addEventlistener(click => timeOpt = 1);
+
+//weekly
+weeklyBtn.addEventlistener(click => timeOpt = 2);
+
+//monthly
+monthlyBtn.addEventlistener(click => timeOpt = 3);
+
+
+// ##Showing info
+
+function createCard(JSONbd){
+    const card = document.getelementbyid("card-container"); 
+    JSONbd.forEach(item => 
+        pic = document.createElement('img');       
+        pic.classList.add("cardPic");
+        
+        title = document.createElement('h3');
+        title.classList.add("cardTitle");
+        title.textContext = JSONbd.title;
+        switch title.textContext {
+            case "Work"
+                pic.src = "work.png";
+        
+            case "Play"
+                pic.src = "work.png";
+        
+            case "Study"
+                pic.src = "work.png";
+        
+            case "Exercise"
+                pic.src = "work.png";
+        
+            case "Social"
+                pic.src = "work.png";
+
+            case "Self Care"
+                pic.src = "work.png";
+        };
+        
+
+        timecount = document.createElement('p');
+        timecount.classList.add("cardTimeCount");
+        timecount.textContext = JSONbd.timeframes.daily.current;
+
+        previoustimecount = document.createElement('p');
+        previoustimecount.classList.add("cardPreviousTimeCount");
+        previoustimecount.textContext = JSONbd.timeframes.daily.previous;
+
+        previousperiod = document.createElement('p');
+        previousperiod.classList.add("cardPreviousPeriod");
+        previousperiod.textContext = "Yesterday";
+    );
+}
+
+function setTimeFrame (timeOpt){
+    timeChoice = timeOpt
+
+    switch timeChoice {
+        case 1 //Daily
+            cardTimeCount = document.innerhtml(bd.timeframes.daily.current);
+            cardPreviousTimeCount = document.innerhtml(bd.timeframes.daily.previous);
+            cardPreviousPeriod = document.innerhtml("Yesterday");
+    
+        case 2 //Weekly
+            cardTimeCount = document.innerhtml(bd.timeframes.weekly.current);
+            cardPreviousTimeCount = document.innerhtml(bd.timeframes.weekly.previous);
+            cardPreviousPeriod = document.innerhtml("Last week");
+
+        case 3 //monthly
+            cardTimeCount = document.innerhtml(bd.timeframes.monthly.current);
+            cardPreviousTimeCount = document.innerhtml(bd.timeframes.monthly.previous);
+            cardPreviousPeriod = document.innerhtml("Last month");
+    };
+}
