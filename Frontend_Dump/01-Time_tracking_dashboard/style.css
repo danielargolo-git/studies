@@ -52,6 +52,8 @@ body {
     font-weight: 500;
 }
 
+
+/* ## Card */
 .bg-profile{
     background-color: var(--Desaturated-blue);
 }
@@ -75,4 +77,63 @@ button {
     background-color: none;
     background: none;
     color: white;
+}
+
+.cartao  {
+    height: 100%;
+    color: white;
+}
+
+
+/* ## LAB */
+
+.Pai{
+    width: 80%;
+    height: 50%;
+
+    left: 50%;
+    position: absolute;
+    transform: translatex(-50%);
+}
+
+.segurador-mestre {
+    margin: 1em;
+}
+
+
+
+.grid-container {
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 700px;
+}
+
+.grid-script{
+    width: relative;
+    position: relative;
+    margin: 1em;
+    height: 500px;
+
+    background-color: gray;
+    border: 1px solid red;
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: .5em;
+}
+
+.item:nth-child(odd){
+    background-color: white;
+}
+
+.profile {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.item {
+    border-radius: .5em;
 }

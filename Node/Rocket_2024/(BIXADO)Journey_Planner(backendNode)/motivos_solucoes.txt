@@ -1,0 +1,5 @@
+Possiveis dicas pra solucionar o projeto bixado:
+	Aula 01 - 42:39
+		Talvez a validação do zod que está impedindo do confirm-trips rodar
+	Endereço errado no postman
+		Talvez o endereço esteja como "locahost" ao invés de "localhost"
